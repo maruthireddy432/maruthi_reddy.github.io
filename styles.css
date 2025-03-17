@@ -1,0 +1,148 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: #121212;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: #1e1e1e;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff9800;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff9800;
+}
+
+/* Hero Section */
+#hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('images/hero-bg.jpg') no-repeat center center/cover;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.hero-content span {
+    color: #ff9800;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+}
+
+.btn {
+    padding: 10px 20px;
+    background: #ff9800;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #ffffff;
+    color: #ff9800;
+}
+
+/* Sections */
+section {
+    padding: 100px 20px;
+}
+
+#about, #projects, #contact {
+    background: #1e1e1e;
+    margin-top: 50px;
+    padding: 60px;
+    border-radius: 10px;
+}
+
+/* Projects */
+.project-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.project {
+    background: #292929;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.project img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.project:hover {
+    transform: scale(1.05);
+    background: #ff9800;
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+}
+
+form input, form textarea {
+    margin: 10px 0;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form button {
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    background: #1e1e1e;
+    margin-top: 50px;
+}
