@@ -121,31 +121,9 @@ section {
 
     border-radius: 10px;
     margin-left: 20px;
-    /* width: 800px; */
-    text-align: justify;
+    text-align: left;
     color: #000;
     font-size: larger;
-}
-
-
-.bullets {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    row-gap: 1rem;
-    margin-bottom: 1rem;
-    opacity: 0;
-    animation: fadeInStagger 0.5s ease forwards;
-}
-
-.bullets > * {
-    padding: 0.5rem;
-    transition: all 0.3s ease;
-    border-radius: 4px;
-}
-
-.bullets > *:hover {
-    background: rgba(255, 152, 0, 0.1);
-    transform: translateX(5px);
 }
 
 @keyframes fadeInStagger {
@@ -228,14 +206,14 @@ section {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* exactly 3 cards per row */
+    grid-template-columns: repeat(2, 1fr); /* exactly 3 cards per row */
     gap: 2rem;
     margin-top: 50px;
 }
 
 @media (max-width: 992px) {
     .projects-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
