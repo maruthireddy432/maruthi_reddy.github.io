@@ -2,24 +2,24 @@ document.querySelectorAll('nav ul li a').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
         const section = document.querySelector(this.getAttribute('href'));
-        section.scrollIntoView({ behavior: 'smooth' });
-    });
-});
-
-// Fade-in animation for project cards with staggered delay
-const observer = new IntersectionObserver(entries => {
-    entries.forEach((entry, index) => {
-        if (entry.isIntersecting) {
-            entry.target.style.setProperty('--delay', `${index * 0.15}s`);
-            entry.target.classList.add('visible');
-            observer.unobserve(entry.target);
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
         }
     });
-}, {
-    threshold: 0.2
 });
 
-document.querySelectorAll('.project-card').forEach(card => {
-    observer.observe(card);
+document.addEventListener('DOMContentLoaded', () => {
+    // AOS is initialized in the HTML for simplicity, but you can manage it here.
+    // For now, the existing functionality is handled by AOS.
+    
+    // Example: A simple form validation script for the contact form
+    const contactForm = document.querySelector('.contact-form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            // In a real scenario, you'd send this data to a server.
+            alert('Thank you for your message! I will get back to you shortly.');
+            contactForm.reset();
+        });
+    }
 });
-
