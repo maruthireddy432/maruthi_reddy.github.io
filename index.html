@@ -2,121 +2,216 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-    <title>Portfolio | Maruthi Reddy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maruthi Reddy | ML Engineer</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="images/cv.png">
+    <link rel="icon" href="images/title_icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script defer src="script.js"></script>
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="logo">Maruthi Reddy</div>
         <nav>
-            <ul>
-                <li><a href="#aboutme">About</a></li>
-                <li><a href="#internship">Internship</a></li>
-                <li><a href="#footer">Contact</a></li>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="hero">
-        <div class="hero-content">
-            <h1>Hello, I'm <span>Maruthi Reddy</span></h1>
-            <p class="subtitle">Aspiring Data Scientist | Machine Learning & AI Enthusiast | Passionate About Data and Decision Making</p>
-            <p class="subtitle">Every great move begins with a great insight. Let the data decide it!</p>
-            <br>
-            <a href="https://maruthireddy432.github.io/projects.github.io/" class="btn" target="_blank">View My Work</a>
-        </div>
-    </section>
-
-    <div id="aboutme">
-        <h2 class="gradient-text" style="text-align: center;">About Me</h2>
-        <div class="about_section">
-            <p>I am an Aspiring Data Scientist and Machine Learning Engineer passionate about transforming raw data into intelligent insights. With expertise in machine learning, deep learning, and natural language processing,
-            I specialize in building scalable AI solutions for complex problems.</p>
-            <p>My technical skills span across <strong>Python, TensorFlow, scikit-learn, and Neural Network frameworks</strong>, along with a strong grasp of <strong>analysis, visualization, and automation</strong>. I enjoy working on AI-driven projects that enhance decision-making and optimize business processes.</p>
-            <p>Beyond coding, I am an advocate for continuous learning and collaboration. Whether it’s AI-driven applications or data-driven storytelling, I strive to create impactful solutions that bridge the gap between data and real-world applications.</p>
-        </div>
-    </div>
-
-    <!-- Courses Section -->
-    <div id="projects"
-        <section id="courses">
-            <h2 class="gradient-text" style="text-align: center;">Training</h2>
-                <div class="about_section">
-                    <h3>Data Science and AI Training - ExcelR Solutions</h3>
-                    <p><strong>Duration:</strong> August 2023 – February 2024</p>
-                    <p><strong>Overview:</strong> Successfully completed an intensive Data Science and Artificial Intelligence training program at ExcelR Solutions, covering end-to-end data-driven workflows and machine learning pipelines. The program emphasized practical, industry-oriented learning with real-world capstone projects.</p>
-                    <p><strong>Skills Acquired:</strong></p>
-                    <ul>
-                        <li>Supervised and Unsupervised Machine Learning using scikit-learn</li>
-                        <li>Deep Learning techniques using TensorFlow and Keras</li>
-                        <li>Natural Language Processing (NLP) — text preprocessing, sentiment analysis</li>
-                        <li>Advanced Data Visualization using Tableau</li>
-                        <li>SQL for data querying and relational database management</li>
-                        <li>Model deployment strategies using Streamlit and FastAPI</li>
-                        <li>Hands-on capstone projects solving real-world business problems</li>
-                    </ul>
-                    <p>Throughout the program, I strengthened my ability to translate complex business requirements into efficient AI/ML solutions, gaining confidence in both technical implementation and stakeholder communication.</p>
-                </div>
-        </section>
-
-        <!-- Internship Experience Section -->
-        <section id="internship">
-            <h2 class="gradient-text" style="text-align: center;">Internship Experience</h2>
-            <div class="about_section">
-                <h3>Data Science Intern – AI Varient</h3>
-                <p><strong>Duration:</strong> November 2024 – March 2025</p>
-                <p><strong>Overview:</strong> Worked as a Data Science Intern where I contributed to the development of predictive models, data analytics pipelines, and business intelligence dashboards, solving real-world business problems through data-driven insights.</p>
-                <p><strong>Key Responsibilities:</strong></p>
-                <ul>
-                    <li>Performed Exploratory Data Analysis (EDA) and feature engineering on large datasets for model building.</li>
-                    <li>Developed and evaluated supervised learning models (Regression, Classification) using scikit-learn and XGBoost.</li>
-                    <li>Built customer churn prediction and recommendation system prototypes.</li>
-                    <li>Applied Natural Language Processing (NLP) techniques for customer feedback analysis and sentiment classification.</li>
-                    <li>Created interactive data visualizations and automated dashboards using Tableau and Python (Plotly, Seaborn).</li>
-                    <li>Collaborated with cross-functional teams to translate business requirements into ML/AI solutions.</li>
-                    <li>Presented actionable insights to stakeholders through data storytelling and visual dashboards.</li>
-                </ul>
-                <p>This internship significantly enhanced my skills in data wrangling, machine learning pipelines, model evaluation, and deploying data-driven solutions in real-world business environments.</p>
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="hero-content" data-aos="fade-up">
+                <h1>Hello, I'm <span class="gradient-text">Maruthi Sai Ganesh Reddy</span></h1>
+                <p class="subtitle">Machine Learning Engineer & AI Developer</p>
+                <p class="subtitle-2" data-aos="fade-up" data-aos-delay="200">Building intelligent systems for a data-driven world.</p>
+                <br>
+                <a href="#projects" class="btn btn-primary" data-aos="fade-up" data-aos-delay="400">View My Work</a>
             </div>
-        </section>
+            </section>
 
-
-        <!-- Certifications Section -->
-        <section id="certifications">
-            <h2 class="gradient-text" style="text-align: center;">Certifications</h2>
-            <div class="about_section">
-                <ul>
-                    <li>NASSCOM Data Science Certification – NASSCOM</li>
-                    <li>Course Completion Certificate – ExcelR Solutions</li>
-                    <li>Data Science Intern – AI Varient</li>
-                </ul>
-            </div>
-        </section>
-    </div>
-
-    <div class="footer" id="footer">
-        <div class="footer-top">
-            <div class="footer-column column1">
-                <h2 class="gradient-text">Contact Me</h2>
-            </div>
-            <div class="footer-column column2">
-                <h3 class="gradient-text">Reach out to me and let's make magic together.</h3>
-                <div class="footer-items">
-                    <a href="mailto:maruthireddy432@gmail.com" class="btn-a" target="_blank">Send Email</a>
-                    <a href="https://www.linkedin.com/in/maruthireddy432/" class="btn-a" target="_blank">LinkedIn</a>
-                    <a href="https://github.com/maruthireddy432" class="btn-a" target="_blank">GitHub</a>
-                    <a href="https://maruthireddy432.github.io/projects.github.io/" class="btn-a" target="_blank">Projects</a>
+        <section id="about" class="about-section section" data-aos="fade-up">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-card" data-aos="zoom-in" data-aos-delay="200">
+                <div class="profile-photo"></div>
+                <div class="about-text">
+                    <p>I am an experienced <b> Machine Learning Engineer</b> and AI Developer with a Master's in Computer Applications. I specialize in designing and deploying end-to-end AI solutions, from developing robust predictive models to turning raw data into actionable insights. My journey began with an impactful internship at <b>AI Varient</b>, where I honed my skills in supervised learning, recommendation systems, and NLP.</p>
+                    <p>Building on that foundation, I now focus on developing scalable and production-ready machine learning pipelines. My technical expertise spans <b>Python, TensorFlow, Scikit-learn, and NLP frameworks</b>, and I'm adept at leveraging data to solve complex business problems. I am driven by a passion for continuous learning and collaboration, always seeking to create impactful solutions that bridge the gap between data and real-world applications.</p>
                 </div>
             </div>
-        </div>
-        <div class="footer-bottom">
-            <p>This website is Designed & Developed By Maruthi Reddy | &copy; 2025</p>
-        </div>
-    </div>
+        </section>
 
+        <section id="skills" class="skills-section section">
+            <h2 class="section-title" data-aos="fade-up">Skills & Tech Stack</h2>
+            <div class="skills-grid">
+                <div class="skill-item" data-aos="fade-left" data-aos-delay="100">
+                    <h3 class="skill-category">Languages</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">R</span>
+                    </div>
+                </div>
+                <div class="skill-item" data-aos="fade-left" data-aos-delay="200">
+                    <h3 class="skill-category">ML Frameworks</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Scikit-learn</span>
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">Keras</span>
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">NLTK</span>
+                    </div>
+                </div>
+                <div class="skill-item" data-aos="fade-left" data-aos-delay="300">
+                    <h3 class="skill-category">Data Tools</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">Numpy</span>
+                        <span class="skill-tag">Plotly</span>
+                        <span class="skill-tag">Seaborn</span>
+                        <span class="skill-tag">Tableau</span>
+                    </div>
+                </div>
+                <div class="skill-item" data-aos="fade-left" data-aos-delay="400">
+                    <h3 class="skill-category">Cloud & DevOps</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">GCP</span>
+                    </div>
+                </div>
+                <div class="skill-item" data-aos="fade-left" data-aos-delay="400">
+                    <h3 class="skill-category">Gen AI</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Langchain</span>
+                        <span class="skill-tag">Groq Cloud</span>
+                        <span class="skill-tag">Prompt Engineering</span>
+                        <span class="skill-tag">LLM's</span>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section section">
+            <h2 class="section-title" data-aos="fade-up">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <img src="images/edubot.png" alt="AI Study Assistant" class="project-image">
+                    <div class="project-info">
+                        <h3>EduBot – AI Study Assistant</h3>
+                        <p>EduBot – An AI-powered study assistant that uses RAG (LangChain + FAISS + HuggingFace + Groq LLMs) to answer questions directly from uploaded documents.</p>
+                        <div class="tech-stack">
+                            <span>RAG, </span><span>Groq LLMs, </span><span>Prompting</span>
+                        </div>
+                        <a href="https://github.com/maruthireddy432/AI-Study-Assistant" class="btn btn-secondary">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                    <img src="images/coldemail.png" alt="Cold Email Generator" class="project-image">
+                    <div class="project-info">
+                        <h3>Cold Email Generator</h3>
+                        <p>A Streamlit app that leverages LangChain + Groq LLMs to extract resume/job details and generate personalized recruiter emails automatically.</p>
+                        <div class="tech-stack">
+                            <span>Streamlit, </span><span>LangChain, </span><span>Groq (Gemma2-9b-it)</span>
+                        </div>
+                        <a href="https://github.com/maruthireddy432/Email_generator" class="btn btn-secondary">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <img src="images/recomendation.png" alt="Recommendation System Project" class="project-image">
+                    <div class="project-info">
+                        <h3>Recommendation System</h3>
+                        <p>Developed a model using collaborative filtering to provide personalized recommendations, enhancing user engagement and sales.</p>
+                        <div class="tech-stack">
+                            <span>Python, </span><span>Scikit-learn, </span><span>NLP</span>
+                        </div>
+                        <a href="https://github.com/maruthireddy432/Product_recommendation" class="btn btn-secondary">View Project</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+<section id="experience" class="experience-section section">
+            <h2 class="section-title" data-aos="fade-up">Experience</h2>
+            <div class="timeline-container">
+                <div class="timeline-item" data-aos="fade-right" data-aos-delay="100">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Machine Learning Engineer <br><span>(Current Role)</span></h3>
+                        <p class="timeline-date">March 2025 - Present</p>
+                        <ul>
+                            <li>Designing and developing end-to-end machine learning pipelines.</li>
+                            <li>Deploying and monitoring models in production environments.</li>
+                            <li>Collaborating with cross-functional teams to integrate AI solutions into products.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-right" data-aos-delay="300">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Data Science Intern <br><span>AI Varient</span></h3>
+                        <p class="timeline-date">Nov 2024 - Mar 2025</p>
+                        <ul>
+                            <li>Developed and evaluated supervised learning models (Regression, Classification) using scikit-learn and XGBoost.</li>
+                            <li>Built customer churn prediction and recommendation system prototypes.</li>
+                            <li>Applied Natural Language Processing (NLP) techniques for customer feedback analysis and sentiment classification.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-right" data-aos-delay="500">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Master of Computer Applications <br><span>JNTUK</span></h3>
+                        <p class="timeline-date">2021 - 2023</p>
+                        <p>Completed a Master of Computer Applications program, focusing on core concepts of data structures, algorithms, and software development, which laid the foundation for my career in AI.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section section">
+            <h2 class="section-title" data-aos="fade-up">Let's Connect</h2>
+            <div class="contact-container" data-aos="fade-up" data-aos-delay="200">
+                <form class="contact-form">
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+                <div class="social-links">
+                    <a href="mailto:maruthireddy432@gmail.com" target="_blank">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"/></svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/maruthireddy432/" target="_blank">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm1.5-11.5c-.828 0-1.5-.672-1.5-1.5s.672-1.5 1.5-1.5 1.5.672 1.5 1.5-.672 1.5-1.5 1.5zm10.5 11.5h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    </a>
+                    <a href="https://github.com/maruthireddy432" target="_blank">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.373 3.433 9.39 8.243 10.973.602.11.82-.26.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.043-1.61-4.043-1.61-.546-1.385-1.332-1.755-1.332-1.755-1.088-.745.082-.73.082-.73 1.205.085 1.838 1.238 1.838 1.238 1.07 1.835 2.809 1.305 3.492.997.108-.775.419-1.305.762-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.383 1.235-3.22-.135-.303-.535-1.52.12-3.175 0 0 1.005-.32 3.3 1.229 2.05-.572 4.22-.572 6.27 0 2.295-1.549 3.29-1.229 3.29-1.229.656 1.655.256 2.872.12 3.175.77.837 1.235 1.91 1.235 3.22 0 4.608-2.802 5.623-5.475 5.92.42.36.81 1.096.81 2.21 0 1.606-.015 2.899-.015 3.284 0 .318.219.69.825.577 4.814-1.583 8.24-5.6 8.24-10.973c0-6.627-5.372-12-12-12z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Maruthi Reddy | Designed & Developed with 🧡</p>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+    </script>
 </body>
 </html>
-
