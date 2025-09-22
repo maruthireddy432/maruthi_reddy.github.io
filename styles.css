@@ -203,7 +203,7 @@ body {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    background: url('images/profile.jpg') no-repeat center center/cover;
+    background: url('https://drive.google.com/file/d/1BqjSwidqguORkgBpkakW6DzrgHmPy_Xb/view?usp=drive_link') no-repeat center center/cover;
     border: 4px solid var(--accent-color);
     flex-shrink: 0;
 }
@@ -530,3 +530,4 @@ body {
         gap: 20px;
     }
 }
+
