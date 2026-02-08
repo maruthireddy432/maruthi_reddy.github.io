@@ -2,7 +2,7 @@
     --primary-bg: #121212;
     --secondary-bg: #1e1e1e;
     --card-bg: #212121;
-    --accent-color: #ff9500; 
+    --accent-color: #ff9500; /* The orange color */
     --text-color: #EAEAEA;
     --heading-color: #FFFFFF;
 }
@@ -24,6 +24,8 @@ body {
     color: var(--text-color);
     line-height: 1.6;
     overflow-x: hidden;
+    /* Add padding so content isn't hidden behind the floating nav */
+    padding-bottom: 100px; 
 }
 
 .section {
@@ -52,10 +54,10 @@ body {
     margin: 10px auto 0;
 }
 
-/* Header & Nav */
+/* Header (Logo only now) */
 .header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* Centered the logo */
     align-items: center;
     padding: 20px 5%;
     background-color: rgba(30, 30, 30, 0.8);
@@ -77,39 +79,55 @@ body {
     letter-spacing: 1px;
 }
 
-.nav-links {
-    list-style: none;
+/* --- New Floating Navigation Dock --- */
+.floating-nav {
+    position: fixed;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(30, 30, 30, 0.8); /* Dark semi-transparent background */
+    backdrop-filter: blur(15px); /* Glass effect */
+    padding: 0.8rem 1.8rem;
+    border-radius: 50px; /* Pill shape */
+    z-index: 1000;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.nav-menu {
     display: flex;
-    gap: 30px;
+    gap: 1.2rem;
+    list-style: none;
+    align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
-.nav-links a {
-    color: var(--text-color);
+.nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #a1a1aa; /* Muted gray for inactive icons */
+    font-size: 1.5rem;
+    padding: 12px;
+    border-radius: 50%; /* Ensures perfect circle shape */
+    transition: all 0.4s ease;
     text-decoration: none;
-    font-weight: 500;
-    position: relative;
-    transition: color 0.3s ease;
 }
 
-.nav-links a::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: -5px;
-    left: 0;
-    background-color: var(--accent-color);
-    transition: width 0.3s ease;
+.nav-link:hover {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
 }
 
-.nav-links a:hover {
-    color: var(--accent-color);
+/* Active State (The Orange Circle with Glow) */
+.nav-link.active {
+    background-color: var(--accent-color); /* Uses the #ff9500 orange */
+    color: var(--secondary-bg); /* Dark icon color for contrast */
+    box-shadow: 0 0 20px rgba(255, 149, 0, 0.6); /* Orange glow effect */
+    transform: translateY(-3px) scale(1.1);
 }
 
-.nav-links a:hover::after,
-.nav-links a.active::after {
-    width: 100%;
-}
 
 /* Hero Section */
 .hero-section {
@@ -185,7 +203,7 @@ body {
 
 /* About Section */
 .about-section {
-    background-color: var(--secondary-bg);
+    /* background-color: var(--secondary-bg); */
 }
 
 .about-card {
@@ -203,10 +221,11 @@ body {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    background: url('https://drive.google.com/file/d/1BqjSwidqguORkgBpkakW6DzrgHmPy_Xb/view?usp=drive_link') no-repeat center center/cover;
+    background: url("images/profile.jpg") no-repeat center center/cover;
     border: 4px solid var(--accent-color);
     flex-shrink: 0;
 }
+
 
 .about-text p {
     font-size: 1.1rem;
@@ -318,7 +337,7 @@ body {
     content: '';
     position: absolute;
     width: 4px;
-    background: linear-gradient(to bottom, var(--accent-color) 0%, #333 100%);
+    background: linear-gradient(to bottom, var(--accent-color) 0%, #ff9500 100%);
     top: 0;
     bottom: 0;
     left: 50%;
@@ -471,14 +490,14 @@ body {
     padding: 30px 5%;
     background-color: var(--secondary-bg);
     border-top: 1px solid rgba(255, 132, 0, 0.803);
+    padding-bottom: 100px;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
     .header {
-        flex-direction: column;
-        gap: 15px;
-        position: static;
+        /* No longer need flex-direction column for header as links are gone */
+        justify-content: center;
     }
 
     .hero-content h1 {
@@ -515,6 +534,25 @@ body {
     .contact-container {
         grid-template-columns: 1fr;
     }
+
+    /* Floating Nav Mobile Adjustments */
+    .floating-nav {
+        bottom: 1.5rem;
+        padding: 0.6rem 1.2rem;
+        width: 100%; /* Slightly wider on mobile */
+        max-width: 100px;
+    }
+    
+    .nav-menu {
+        justify-content: space-between;
+        gap: 0;
+        width: 100%;
+    }
+
+    .nav-link {
+        font-size: 1.3rem;
+        padding: 10px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -525,9 +563,5 @@ body {
     .hero-content h1 {
         font-size: 2.5rem;
     }
-
-    .nav-links {
-        gap: 20px;
-    }
+    /* Removed old nav-links gap style */
 }
-
